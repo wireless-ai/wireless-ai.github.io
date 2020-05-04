@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!-- saved from url=(0025)https://jemdoc.jaboc.net/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/">
+
+<link rel="stylesheet" href="./jemdoc – light markup_files/jemdoc.css" type="text/css">
+<link rel="stylesheet" href="./jemdoc – light markup_files/jacob.css" type="text/css">
+<title>jemdoc – light markup</title>
+</head>
+<body cz-shortcut-listen="true">
+<script type="text/javascript" async="" src="./jemdoc – light markup_files/ga.js.download"></script><script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-2725246-3']);
+_gaq.push(['_trackPageview']);
+(function() {
+ var ga = document.createElement('script'); ga.type =
+ 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+   : 'http://www') + '.google-analytics.com/ga.js';
+ var s = document.getElementsByTagName('script')[0];
+ s.parentNode.insertBefore(ga, s);
+ })();
+</script>
+<table summary="Table for page layout." id="tlayout">
+<tbody><tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">jemdoc</div>
+<div class="menu-item"><a href="https://jemdoc.jaboc.net/index.html" class="current">home</a></div>
+<div class="menu-item"><a href="https://jemdoc.jaboc.net/download.html">download</a></div>
+<div class="menu-item"><a href="https://jemdoc.jaboc.net/revision.html">version/bug&nbsp;info</a></div>
+<div class="menu-item"><a href="https://jemdoc.jaboc.net/contact.html">contact</a></div>
+<div class="menu-category">user's guide</div>
+<div class="menu-item"><a href="https://jemdoc.jaboc.net/using.html">running&nbsp;jemdoc</a></div>
+<div class="menu-item"><a href="https://jemdoc.jaboc.net/example.html">example&nbsp;page</a></div>
+<div class="menu-item"><a href="https://jemdoc.jaboc.net/cheatsheet.html">cheat&nbsp;sheet</a></div>
+<div class="menu-item"><a href="https://jemdoc.jaboc.net/extra.html">extra&nbsp;syntax</a></div>
+<div class="menu-category">configuration</div>
+<div class="menu-item"><a href="https://jemdoc.jaboc.net/htmlchanges.html">html&nbsp;changes</a></div>
+<div class="menu-item"><a href="https://jemdoc.jaboc.net/menu.html">adding&nbsp;a&nbsp;menu</a></div>
+<div class="menu-item"><a href="https://jemdoc.jaboc.net/modelines.html">modelines</a></div>
+<div class="menu-category">goodies</div>
+<div class="menu-item"><a href="https://jemdoc.jaboc.net/stuff.html">vim,&nbsp;make</a></div>
+<div class="menu-item"><a href="https://jemdoc.jaboc.net/latex.html">latex&nbsp;equations</a></div>
+<div class="menu-item"><a href="https://jemdoc.jaboc.net/tables.html">tables</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>jemdoc – light markup</h1>
+<div id="subtitle"><a href="https://jemnz.com/">Jacob Mattingley</a> (<a href="mailto:www@jemnz.com">www@jemnz.com</a>)</div>
+</div>
+<p>jemdoc is a light text-based markup language designed for creating 
+websites. It takes a text file written with <a href="https://jemdoc.jaboc.net/example.html">jemdoc markup</a>, an
+optional configuration file and an optional menu file, and makes static websites
+that look something like this one, <a href="http://stanford.edu/~boyd">that one</a> or
+<a href="http://www.stanford.edu/class/ee364a/">another one</a>.</p>
+<p>jemdoc was inspired by <a href="http://www.methods.co.nz/asciidoc/">AsciiDoc</a>, which is a
+text document format. AsciiDoc is great, and lots of the ideas from AsciiDoc are
+copied in jemdoc. The main differences are that jemdoc is simpler (you could say
+deliberately feature poor) and has more consistent syntax.</p>
+<p><a href="https://jemdoc.jaboc.net/download.html">Download jemdoc.</a></p>
+<div class="infoblock">
+<div class="blockcontent">
+<p>Version <tt>0.7.3</tt> was released on 2012-11-27 with some small bug fixes.
+See the <a href="https://jemdoc.jaboc.net/revision.html">release notes</a>.</p>
+</div></div>
+<p><a href="https://github.com/jem/jemdoc">Contribute to jemdoc on github.</a></p>
+<h2>Goals</h2>
+<ul>
+<li><p>Simple, consistent syntax.</p>
+</li>
+<li><p><img class="eq" src="./jemdoc – light markup_files/4948185842685763517-130.png" alt="mbox{LaTeX}" style="vertical-align: -4px"> <a href="https://jemdoc.jaboc.net/latex.html">equation support</a>.</p>
+</li>
+<li><p><a href="https://jemdoc.jaboc.net/tables.html">Table support</a>.</p>
+</li>
+<li><p>Portability. The (single) jemdoc <a href="http://www.python.org/">Python</a> file +
+single css file + your input file → html.</p>
+</li>
+<li><p>Based on <a href="http://www.w3.org/Style/CSS/">CSS</a> so formatting specifics are
+independent of jemdoc.</p>
+</li>
+<li><p>Production of clean,
+<a href="http://validator.w3.org/check/referer">standards-compliant</a> <a href="http://www.w3.org/TR/xhtml11/">XHTML 1.1</a>.</p>
+</li>
+<li><p>Minimal bells and whistles, but simple fallback to raw html if required.</p>
+</li>
+</ul>
+<h2>License</h2>
+<p>Copyright © 2007–2012 Jacob Mattingley.</p>
+<p>jemdoc is free software; you can redistribute it and/or modify it under the
+terms of the <a href="http://www.gnu.org/licenses/gpl-3.0.html">GNU General Public
+License</a> as published by the Free Software Foundation; either version 3 of the
+License, or (at your option) any later version.</p>
+<p>jemdoc is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE. See the <a href="http://www.gnu.org/licenses/gpl-3.0.html">GNU
+General Public License</a> for more details.</p>
+<div id="footer">
+<div id="footer-text">
+Page generated 2012-11-27 15:03:29 PST, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+(<a href="https://jemdoc.jaboc.net/index.jemdoc">source</a>)
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+
+
+</body></html>
