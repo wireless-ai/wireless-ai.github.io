@@ -161,6 +161,7 @@ div#footer {
 	border-top: 1px solid #c0c0c0;
 	padding-top: 0.1em;
 	margin-top: 4.0em;
+	margin: 20px;
 	color: #c0c0c0;
 }
 
@@ -171,6 +172,8 @@ div#footer a {
 div#footer-text {
 	float: left;
 	padding-bottom: 8px;
+	margin: 20px;
+	margin-left: 0px;
 }
 
 ul, ol, dl {
@@ -365,3 +368,11 @@ table.imgtable, table.imgtable td {
     border: none;
     text-align: left;
 }
+
+table.imgtable_prof, table.imgtable_prof td {
+	border: none;
+    text-align: center;
+	margin-left:auto;
+	margin-right:auto;
+}
+
